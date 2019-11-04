@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: 10.100.11.29:9092,10.100.11.30:9092,10.100.11.31:9092
+    consumer:
+      group-id: 1
+      enable-auto-commit: false
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      max-poll-records: 1000
